@@ -30,5 +30,4 @@ public class veiksmai {
 		c = 0;
 
 	}
-
 }
