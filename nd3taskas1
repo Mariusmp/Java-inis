@@ -1,0 +1,62 @@
+package lt.mariusmp;
+
+public class nd3taskas1 {/* cia galima suvest viska beveik */
+
+	public static void main(String[] args) {
+		System.out.println("Trečios užduoties pirma dalis viską apibrėžti - brėžiam, nesimato tik");
+		byte a = 127;
+		int b = 2147483646;
+		long c = 9223372036854775806L;
+		double d = 1.797E+308;
+		String e = "Plušam, kaip dirbam";
+		boolean f = false; /* defaultas ir taip... bet kadangi o tačiau reikia apibrėžti, tai va */
+		boolean g = true;
+		System.out.println("Trečios dalies antra užduotis išspausdinti kintamuosius ir jų min/max reikšmes");
+		System.out
+				.println("Bytas a=" + a + " Max " + Byte.MAX_VALUE + " Min " + Byte.MIN_VALUE + " Klasė " + byte.class);
+		System.out.println(
+				"Intas b=" + b + " Max " + Integer.MAX_VALUE + " Min " + Integer.MIN_VALUE + " Klasė " + int.class);
+		System.out.println(
+				"Longas c=" + c + " Max " + Long.MAX_VALUE + " Min " + Long.MIN_VALUE + " Klasė " + long.class);
+		System.out.println(
+				"Doblas d=" + d + " Max " + Double.MAX_VALUE + " Min " + Double.MIN_VALUE + " Klasė " + double.class);
+		System.out.println(
+				"Stringas e=" + e + " Max " + "Nepaeis" + " Min " + "Irgi nepaeis " + " Klasė " + "Prastai čia išvis");
+		System.out.println("Būtlynas f=" + f + " Ale max " + Boolean.TRUE + " Ale min " + Boolean.FALSE + " Klasė "
+				+ boolean.class);
+		System.out
+				.println("Trečios dalies \n trečia užduotis \n aritmetiniai ir loginiai veiksmai \n ir jų rezultatai");
+		System.out.println("a+b=" + (a + b));
+		System.out.println("a-b=" + (a - b));
+		System.out.println("a*b=" + (a * b));
+		System.out.println("b/a=" + (b / a));
+		System.out.println("a/b be double, šaltiniai byte ir int, rodo deja tik sveiką skaičių =" + (a / b));
+		System.out.println("a/b su double, nes be double b*** gaunas =" + ((double) a / b));
+		System.out.println("liekana padalinus b%a=" + (b % a));
+		System.out.println("liekana padalinus c%a=" + (c % a));
+		System.out.println("liekana padalinus a/b=" + (a % b) + " net nesivargino dalint...");
+		System.out.println("a++ =" + (a++));
+		System.out.println("o dabar a pasidarė " + a);
+		System.out.println("b--=" + (b--));
+		System.out.println("o dabar b pasidarė " + b);
+		System.out.println("d++=" + (d++));
+		System.out.println("o dabar d pasidarė " + d);
+		System.out.println("d/2=" + (d / 2));
+		boolean isLetter = Character.isLetter(a);
+		System.out.println("Booleno veiksmai - ar a kintamasis raidė? \n" + isLetter);
+		boolean maziau = a < b;
+		System.out.println("Booleno veiksmai - ar a<b? " + maziau);
+		System.out.println("a nelygu b? " + (a != b));
+		System.out.println("a && b = " + (f && g));
+		System.out.println("a || b = " + (f || g));
+		System.out.println("!(a && b) = " + !(f && g));
+		System.out.println("Ketvirta iki galo nesuprasta");
+		System.out.println("Penktos užduoties yra visur \r blyn a nesuveikė");
+		System.out.println("Operatorių eiliškumas 6 punktas");
+		System.out.println("(a != b) & !(Character.isLetter(a) \n" + ((a != b) & (!(Character.isLetter(a)))));
+		int h = 2 + 2 * 2;
+		System.out.println("2+2*2= " + h);
+		System.out.println("7 punktas - daug kur kelių tipų kintamieji panaudoti viename reiškinyje");
+		System.out.println("8 punktas - manau kad trečdalį visų operatorių panaudojau");
+	}
+}
